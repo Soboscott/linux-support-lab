@@ -1,0 +1,5 @@
+INFO application started
+INFO User signed in
+ERROR Database connection failed
+INFO Retrying connection
+ERROR Connection timed out
