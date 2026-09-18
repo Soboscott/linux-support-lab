@@ -1,0 +1,5 @@
+logs/application.log:3:ERROR Database connection failed
+logs/application.log:5:ERROR Connection timed out
+logs/web.log:2:ERROR Request failed: database unavailable
+
+Investigation note: Check database availability and connection settings.
