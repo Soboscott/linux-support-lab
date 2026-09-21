@@ -1,4 +1,7 @@
 #!/bin/bash
+project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)" || exit 2
+cd -- "$project_dir" || exit 2
+
 search_term="${1:-ERROR}"
 
 mkdir -p reports
