@@ -6,6 +6,7 @@ grep -n -F -- "$search_term" logs/*.log > reports/errors.txt
 result=$?
 
 if [ "$result" -eq 0 ]; then
+    printf "Found %s matching lines.\n" "$(wc -l < reports/errors.txt)"
     printf 'Report for "%s" saved to reports/errors.txt\n' "$search_term"
 elif [ "$result" -eq 1 ]; then
     printf 'No matches found for "%s".\n' "$search_term"
