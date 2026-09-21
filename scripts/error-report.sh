@@ -14,7 +14,8 @@ if [ "$result" -eq 0 ]; then
 elif [ "$result" -eq 1 ]; then
     printf 'No matches found for "%s".\n' "$search_term"
 else
-    printf 'Search failed. Check the error message above.\n'
+    printf 'Search failed. Check the error message above.\n' >&2
+
 fi
 
 exit "$result"
